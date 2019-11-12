@@ -23,6 +23,9 @@
 #include "serial.h"
 #include "temperature.h"
 #include "cardreader.h"
+#if ENABLED(CH376_STORAGE_SUPPORT)
+#include "mass_storage/cardusbdiskreader.h"
+#endif
 #include "planner.h"
 #include "parser.h"
 #include "printcounter.h"
@@ -128,7 +131,7 @@ int16_t scale(int16_t value, int16_t valueScale, int16_t targetScale)
 //! Initialize the printer and its LCD
 void ADVi3pp_::setup_lcd_serial()
 {
-    Serial2.begin(advi3_pp_baudrate);
+    Serial3.begin(advi3_pp_baudrate);
 }
 
 //! Change the baudrate. Check before that it is actually different.
