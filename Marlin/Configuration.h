@@ -152,7 +152,7 @@
 #elif defined(ADVi3PP_HE180021)
 #define MOTHERBOARD BOARD_I3_PLUS_HE180021
 #else
-#define MOTHERBOARD BOARD_I3_PLUS
+#define MOTHERBOARD BOARD_3DLABS_STEALTH
 #endif
 
 // Optional custom name for your RepStrap or other custom machine

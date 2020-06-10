@@ -187,7 +187,9 @@
   #include "pins_I3_PLUS_MARK2.h"     // ATmega2560
 #elif MB(I3_PLUS_HE180021)
   #include "pins_I3_PLUS_HE180021.h"  // ATmega2560
-
+#elif MB(3DLABS_STEALTH)
+  #include "pins_3DLABS_STEALTH.h"
+  
 //
 // ATmega1281, ATmega2561
 //
